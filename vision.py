@@ -35,7 +35,7 @@ def input_image_details(uploaded_file):
         raise FileNotFoundError("No file uploaded")
     
 
-## INitialize our streamlit app
+## Initialize our streamlit app
 
 st.set_page_config(page_title="Multilanguage Invoice Extractor")
 
