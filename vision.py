@@ -9,7 +9,7 @@ from PIL import Image
 import google.generativeai as genai
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-
+# Google API, if not working  again create a new one
 
 ## Function to load gemini Pro vision
 model=genai.GenerativeModel('gemini-pro-vision')
@@ -64,3 +64,4 @@ if submit:
     response=get_gemini_response(input_prompt,image_data,input)
     st.subheader("The Response is")
     st.write(response)
+
